@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -62,6 +62,25 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+header {
+	width: 800px;
+	margin: 20px auto;
+	display: flex;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	align-self: flex-end;
+	font-size: 90%;
+}
+
 p {
     line-height: 1.4;
 }
@@ -69,6 +88,10 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.banner-img {
+	margin: 20px auto;
 }
 
 .top-content {
@@ -82,7 +105,17 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.about-page .top-content {
+	margin-bottom: 0;
+}
+
+.about-page .top-content .text-container {
+    width: 97%;
+    padding: 0 1%;
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -112,6 +145,84 @@ p {
     justify-content: center;
 }
 
+.about-page .middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-bottom: 0;
+}
+
+.about-page .middle-content h2 {
+		margin: 15px 0;
+		padding-left: 0;
+}
+
+.about-page .middle-content .text-container {
+	    padding: 0;
+	    padding-bottom: 20px;
+					border-bottom: 1px dashed black;
+}
+
+.about-page .middle-content .box {
+		width: 48.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 10px;
+		margin: 20px auto;
+}
+
+.about-page .middle-content button {
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 8px 22px;
+	margin-top: 20px;
+}
+
+#b1 {
+	background-color: teal;
+}
+
+#b2 {
+	background-color: gold;
+}
+
+#b3 {
+	background-color: palegreen;
+}
+
+#b4 {
+	background-color: salmon;
+}
+
+#b5 {
+	background-color: maroon;
+}
+
+#b6 {
+	background-color: green;
+}
+
+#b7 {
+	background-color: violet;
+}
+
+#b8 {
+	background-color: pink;
+}
+
+#b9 {
+	background-color: purple;
+}
+
+#b10 {
+	background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +237,10 @@ p {
     padding-right: 0;
 }
 
+.about-page .bottom-content {
+	margin: 0 20px 40px 20px;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -137,7 +252,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 footer nav a {
